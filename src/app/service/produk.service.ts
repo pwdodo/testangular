@@ -9,14 +9,14 @@ export class ProdukService {
   private readonly apiUrl: string = 'https://dummyjson.com/products'
   constructor(private http: HttpClient) { }
 
-  getProduk(limit: number = 10): Observable<any> {
+  getProduk(limit: number): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/?limit=${limit}`)
   }
   getProdukDetail(id: string ): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/${id}`)
   }
   getProdukCari(q: any ): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/${q}`)
+    return this.http.get<any>(`${this.apiUrl}/search?q=${q}`)
   }
   
 }

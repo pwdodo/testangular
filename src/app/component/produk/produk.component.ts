@@ -11,7 +11,7 @@ export class ProdukComponent implements OnInit {
   
   response: any[] = [];
   ngOnInit(): void {
-    this.ProdukService.getProduk(10).subscribe(
+    this.ProdukService.getProduk(20).subscribe(
       (results:any)=>{
         console.log(results)
         this.response=results.products
