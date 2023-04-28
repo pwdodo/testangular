@@ -4,10 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProdukComponent } from './component/produk/produk.component';
+import { ProdukDetailComponent } from './component/produk-detail/produk-detail.component';
+import { ProdukCariComponent } from './component/produk-cari/produk-cari.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProdukComponent,
+    ProdukDetailComponent,
+    ProdukCariComponent
   ],
   imports: [
     BrowserModule,
