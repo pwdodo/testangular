@@ -12,7 +12,7 @@ export class ProdukService {
   getProduk(limit: number = 10): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/?limit=${limit}`)
   }
-  getProdukDetail(id: number = 1): Observable<any> {
+  getProdukDetail(id: string ): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/${id}`)
   }
   getProdukCari(q: any ): Observable<any> {

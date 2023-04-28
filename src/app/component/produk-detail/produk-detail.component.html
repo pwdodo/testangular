@@ -1,1 +1,16 @@
-<p>produk-detail works!</p>
+
+<button [routerLink]="['/produk']" type="button" class="button btn btn-xs btn-warning">Kembali</button>
+<div class="card" >
+    <div class="card-body">
+    <h5 class="card-title">{{response.title}}</h5>
+    <p class="card-text">{{response.description}}</p>
+    <p class="card-text"><img [src]="response.thumbnail" class="img-fluid" height="300" width="300" style="border-radius: 10%;" alt="{{response.title}}"></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Brand : {{response.brand}}</li>
+    <li class="list-group-item">Category : {{response.category}}</li>
+    <li class="list-group-item">Price : {{response.price}}</li>
+    <li class="list-group-item">Rating : {{response.rating}}</li>
+    <li class="list-group-item">Stock : {{response.stock}}</li>
+  </ul>
+</div>
